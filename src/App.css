@@ -1,0 +1,91 @@
+.App {
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap:5rem;
+  width: fit-content;
+}
+.dish
+{
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 10px;
+
+}
+.dish div{
+  border-radius: 0 0 10px 10px;
+}
+.card-btn{
+  background: none;
+  padding: 10px;
+  border-radius: 15px;
+  width: 100px;
+}
+.h-80{
+  height: 80vh;
+}
+.h-3{
+  min-height: 20%;
+  
+}
+.h-2{
+  height: 50%;
+}
+.flex{
+  display: flex;
+}
+.flex-col{
+  flex-direction: column;
+}
+.space-bw{
+  justify-content: space-between;
+}
+.p-1{
+  padding: 1rem;
+}
+.pb-1{
+  padding-bottom: 1rem;
+}
+.pt-1{
+  padding-top: 1rem;
+}
+.p-2{
+  padding: 2rem;
+}
+.w-full{
+  width: 100%;
+}
+.items-start{
+  align-items: flex-start;
+}
+.items-center{
+  align-items: center;
+}
+.grid{
+  display: grid;
+}
+.grid-2{
+  grid-template-columns: 1fr 1fr;
+  gap:10px;
+}
+.grid-3{
+  grid-template-columns: repeat(3,1fr);
+  gap:10px;
+}
+.gap-1{
+  gap:1rem;
+}
+.gap-2{
+  gap:2rem;
+}
+.gap-8{
+  gap:8rem;
+}
+.justify{
+  text-align: justify;
+}
