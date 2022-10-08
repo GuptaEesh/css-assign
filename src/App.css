@@ -1,6 +1,7 @@
-.App {
+/* generic classes */
+
+.app-holder{
   text-align: center;
-  height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -8,24 +9,29 @@
   gap:5rem;
   width: fit-content;
 }
-.dish
-{
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: flex-end;
-  border-radius: 10px;
 
+.food-guide{
+  background: url('https://previews.123rf.com/images/vectorshots/vectorshots1407/vectorshots140700225/29659934-blue-subtle-background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat; 
 }
-.dish div{
-  border-radius: 0 0 10px 10px;
+
+.heading{
+  margin: 1rem;
 }
-.card-btn{
-  background: none;
-  padding: 10px;
-  border-radius: 15px;
-  width: 100px;
+.line-under{
+  width: 40px;
+  height: 2px;
+  background-color:rgba(40, 20, 255, 0.7);
 }
+.line{
+  display:block;
+  background-color:rgb(151, 151, 151);
+  height: 2px;
+}
+
+/*  utils  */
+
 .h-80{
   height: 80vh;
 }
@@ -35,15 +41,6 @@
 }
 .h-2{
   height: 50%;
-}
-.flex{
-  display: flex;
-}
-.flex-col{
-  flex-direction: column;
-}
-.space-bw{
-  justify-content: space-between;
 }
 .p-1{
   padding: 1rem;
@@ -60,12 +57,51 @@
 .w-full{
   width: 100%;
 }
+.gap-1{
+  gap:1rem;
+}
+.gap-2{
+  gap:2rem;
+}
+.gap-8{
+  gap:8rem;
+}
+
+/* text-utils */
+
+.justify{
+  text-align: justify;
+}
+.center{
+  text-align: center;
+}
+
+/* flex props */
+
+.flex{
+  display: flex;
+}
+.flex-col{
+  flex-direction: column;
+}
+.space-bw{
+  justify-content: space-between;
+}
+.space-around{
+  justify-content: space-around;
+}
+.center{
+  justify-content: center;
+}
 .items-start{
   align-items: flex-start;
 }
 .items-center{
   align-items: center;
 }
+
+/* grid props */
+
 .grid{
   display: grid;
 }
@@ -77,15 +113,7 @@
   grid-template-columns: repeat(3,1fr);
   gap:10px;
 }
-.gap-1{
-  gap:1rem;
-}
-.gap-2{
-  gap:2rem;
-}
-.gap-8{
-  gap:8rem;
-}
-.justify{
-  text-align: justify;
+.grid-mid-3{
+  grid-template-columns: 1fr 2fr 1fr;
+  gap:10px;
 }

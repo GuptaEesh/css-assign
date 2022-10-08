@@ -1,0 +1,56 @@
+.dish
+{
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 10px;
+}
+.dish div{
+  border-radius: 0 0 10px 10px;
+  height: 40%;
+}
+.first-section{
+  border-bottom: 2px solid ;
+  height: 60%;
+  padding: 10px;
+}
+.second-section{
+  padding-top: 10px;
+  font-size: smaller;
+}
+
+.card-btn{
+  background: none;
+  border-radius: 15px;
+  font-weight: bolder;
+  font-size: smaller;
+}
+.card-btn + small{
+  font-weight: bolder;
+}
+.chef-blk{
+  background-image: url('https://images.thestar.com/S9Mu8Iq0-Fi4wLBQO2g5k33tUko=/1280x1024/smart/filters:cb(1515798902581)/https://www.thestar.com/content/dam/thestar/news/gta/2011/08/04/doughnut_cheeseburger_debuts_at_cne/doughnutburger.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat; 
+  padding: 5rem;
+}
+.chef-card{
+    padding:1rem;
+    border-radius: 10px;
+    width: 300px;
+  }
+  .chef-card img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;  
+}
+.food-type picture{
+    background-color: rgba(44, 51, 151, 0.5);
+    padding:1rem;
+    border-radius: 50%;
+    height: fit-content;
+  }
+  .food-type picture img{
+    height: 80px;
+  }

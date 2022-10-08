@@ -1,4 +1,5 @@
 import React from "react";
+import "./components.css";
 
 const DishCard = ({
   bgColor,
@@ -22,24 +23,22 @@ const DishCard = ({
         style={{ backgroundColor: bgColor, color: textColor }}
         className="flex flex-col w-full h-3 p-1"
       >
-        <section
-          style={{ borderBottom: "2px solid " }}
-          className="flex flex-col items-start space-bw gap-2 pb-1"
-        >
+        <section className="first-section flex flex-col items-start space-around">
           <h1>{dishName}</h1>
-          <small>{dishDesc}</small>
+          <small className="justify">{dishDesc}</small>
         </section>
-        <section className="flex space-bw items-center pt-1">
+        <section className="flex space-bw items-center second-section">
           <button
             style={{
-              border: !smallCard ? `1px solid ${textColor}` : null,
+              border: !smallCard ? `1px solid ${textColor}` : "none",
+              padding: !smallCard ? "10px 40px 10px 40px" : "5px",
               color: textColor,
             }}
             className="card-btn"
           >
             Explore &gt;
           </button>
-          <p>{dishRating} Rated</p>
+          <small>{dishRating} Rated</small>
         </section>
       </div>
     </article>
